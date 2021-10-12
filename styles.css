@@ -2,6 +2,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: Nunito Sans, sans-serif;
+  position: relative;
 }
 .header {
   background-color: #131313;
@@ -98,7 +99,7 @@ a {
   line-height: 53px;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 43px 21px 21px;
+  margin: 43px 42px 19px;
 }
 .hero__title-span {
   color: #e3b873;
@@ -107,12 +108,12 @@ a {
   font-size: 22px;
   line-height: 36px;
   color: #ffffff;
-  margin: 21px 661px 21px 21px;
+  margin: 0px 661px 0 43px;
 }
 .hero__button1__size {
   width: 207px;
   height: 51px;
-  margin-left: 21px;
+  margin-left: 43px;
   margin-right: 20px;
   margin-top: 41px;
 }
@@ -138,12 +139,15 @@ a {
   background: #131313;
   width: 100%;
   height: 1074px;
-  position: absolute;
+  /**position: absolute;**/
 }
-/**.project-text {
-  padding-left: 21px;
-  margin-top: 77px;
-}**/
+.project__text-img {
+  margin-left: 42px;
+  margin-right: 42px;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+}
 .project__subtitle {
   font-family: Yeseva One;
   font-size: 27px;
@@ -151,8 +155,9 @@ a {
   letter-spacing: -0.07em;
   text-transform: uppercase;
   color: #e3b873;
-  /**margin-top: 77px;
-  margin-left: 21px;**/
+  margin-top: 0;
+  margin-bottom: 0;
+  /**margin-left: 21px;**/
 }
 .project__paragraph {
   font-family: Nunito Sans;
@@ -160,6 +165,8 @@ a {
   line-height: 27px;
   color: #ffffff;
   margin-top: 34px;
+  margin-bottom: 42px;
+
   /**margin-left: 21px;**/
 }
 .project__subtitle__features {
@@ -169,6 +176,8 @@ a {
   text-transform: uppercase;
 
   color: #e3b873;
+  margin-top: 0;
+  margin-bottom: 34px;
 }
 .span__project {
   font-family: Nunito Sans;
@@ -177,17 +186,10 @@ a {
 
   color: #ffffff;
 }
-.project__features {
-  display: inline-block;
-  margin-right: 29px;
-  margin-bottom: 34px;
-}
 .container__projects {
-  padding-left: 21px;
-  margin-top: 77px;
-  padding-right: 21px;
+  padding-top: 107px;
 }
-.icons {
+.icons__project {
   margin-top: 81px;
 }
 .projects__arrow-left {
@@ -196,11 +198,12 @@ a {
 .projects__arrow-right {
   margin-left: 30px;
 }
-.container__projects__nav {
+/**.container__projects__nav {
   max-width: 679px;
   margin-bottom: 53px;
   margin-top: 107px;
-}
+}**/
+
 .projects__nav__link {
   font-family: Yeseva One;
   font-size: 14px;
@@ -213,9 +216,288 @@ a {
   text-decoration: underline;
   transition: color 0.2s;
 }
-.project__text-img {
-  display: flex;
-}
 .projects__img {
   margin-left: 50px;
+}
+.container__project__features {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.project__features {
+  margin-right: 29px;
+  margin-bottom: 34px;
+  width: 208px;
+  height: 50px;
+}
+/**.container__projects__nav {
+  display: flex;
+  justify-content: flex-end;
+}**/
+.nav__ul__size-project {
+  max-width: 679px;
+  margin-left: auto;
+  padding-right: 42px;
+  padding-left: 0;
+  margin-bottom: 53px;
+  margin-top: 0;
+}
+.control {
+  position: relative;
+  margin-top: -324px;
+}
+.container__control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subtitle__main {
+  font-family: Yeseva One;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.control__subtitle {
+  color: #ffffff;
+  margin-bottom: 13px;
+  max-width: 1440px;
+  margin-top: 0;
+}
+.icons__control {
+  margin-bottom: 31px;
+  max-width: 1440px;
+  text-align: center;
+}
+.hr {
+  background: #e3b873;
+  border-radius: 30px;
+  width: 55px;
+  margin-top: 63px;
+  margin-bottom: 0;
+}
+.control__paragraph {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  line-height: 37px;
+  text-align: center;
+
+  color: #363636;
+  margin-top: 34px;
+  margin-bottom: 0;
+  width: 681px;
+}
+.input__control {
+  box-sizing: border-box;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  line-height: 23px;
+  color: #363636;
+
+  height: 33px;
+  width: 231px;
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  background-color: transparent;
+  color: inherit;
+  outline: none;
+}
+input,
+label {
+  display: block;
+}
+.form__input {
+  display: inline-block;
+}
+.label__control {
+  font-family: Nunito Sans;
+  font-size: 13px;
+  line-height: 21px;
+  color: rgba(54, 54, 54, 0.5);
+}
+.button-submit__control {
+  background: #e3b873;
+  box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+  border-radius: 2px;
+  border: none;
+
+  font-family: Nunito Sans;
+  font-size: 13px;
+  line-height: 27px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  width: 200px;
+  height: 51px;
+  vertical-align: bottom;
+}
+.label {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 33px;
+}
+.checkbox {
+  display: none;
+}
+.fake {
+  display: inline-flex;
+  width: 18px;
+  height: 18px;
+  background: #e3b873;
+  color: #fff;
+  justify-content: center;
+}
+.fake::before {
+  content: "\2714";
+  opacity: 0;
+  transition: 0.2s;
+}
+.checkbox:checked + .fake::before {
+  opacity: 1;
+}
+.text {
+  font-family: Nunito Sans;
+  font-size: 14px;
+  line-height: 163.68%;
+  margin-left: 9px;
+
+  color: #181818;
+}
+.form__input-1 {
+  margin-right: 58px;
+}
+.form__input-2 {
+  margin-right: 49px;
+}
+form {
+  margin-top: 92px;
+}
+.repair {
+  margin-top: 148px;
+}
+.repair__subtitle {
+  color: #181818;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container__repair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icons__repair {
+  margin-top: 13px;
+}
+.info {
+  background-color: #fff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  width: 330px;
+  height: 286px;
+  position: absolute;
+  top: 294px;
+  left: 31px;
+  right: 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.card-1__repair,
+.card-2__repair,
+.card-3__repair {
+  position: relative;
+}
+.subtitle__card {
+  font-family: Yeseva One;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #363636;
+  margin-top: 25px;
+  margin-left: 34px;
+  margin-bottom: 0;
+}
+.ul__repair {
+  font-family: Nunito Sans;
+  font-size: 13px;
+  line-height: 27px;
+
+  color: #959595;
+}
+.wrapper__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 31px;
+}
+.project__subtitle__features {
+  font-family: Yeseva One;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+
+  color: #e3b873;
+}
+.price__repair {
+  color: #ffffff;
+  background: #e3b873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  width: 228px;
+  height: 54px;
+  position: absolute;
+  left: 31px;
+  bottom: -217px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.offer__repair {
+  background-image: url(static/images/bg__repair.jpg);
+  width: 1006px;
+  height: 645px;
+  margin-top: 311px;
+  margin-right: 737px;
+}
+.repair__number {
+  font-family: Yeseva One;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  background: #e3b873;
+  color: #ffffff;
+  border-radius: 50%;
+  height: 42px;
+  width: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.number__wrapper {
+  border: 8px solid #ffffff;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+  border-radius: 30px;
+  width: 42px;
+  height: 42px;
+  margin-right: 17px;
+}
+.repair__paragraph {
+  font-family: Nunito Sans;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #363636;
+}
+.offer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.offers {
+  margin-left: 249px;
+  margin-top: 117px;
 }

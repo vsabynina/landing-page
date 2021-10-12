@@ -28,9 +28,9 @@
     </div>
   </header>
   <main class="main">
-    <section class="hero">
+    <section class="hero" id="#hero">
       <div class="container">
-        <h1 class="hero__title">Turnkey Repair in the<br> 
+        <h1 class="hero__title" id="hero">Turnkey Repair in the<br> 
           city of <span class="hero__title-span">Rostov-on-Don</span></h1>
           <p class="hero__paragraph">Get ready-made turnkey repairs on time
             with work time saving up to 45 days and 20% from
@@ -41,49 +41,195 @@
   </section>
   <section class="projects">
     <div class="container container__projects">
+      
+        <ul class="nav__ul nav__ul__size-project">
+        <li><a class="projects__nav__link">Rostov-on-Don, Admiral</a></li>
+        <li><a class="projects__nav__link">Sochi Thieves</a></li>
+        <li><a class="projects__nav__link">Rostov-on-Don Patriotic</a></li>
+        </ul>
+
       <div class="project__text-img">
         <div class="project__text">
-          <h2 class="project__subtitle">
+          <h2 class="project__subtitle" id="projects">
             Completed projects
           </h2>
           <p class="project__paragraph">
             Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction 
             market we have made happy more than 1000 families
           </p>
-          <div class="project__features">
-            <h3 class="project__subtitle__features">
-              City:<br><span class="span__project">Rostov-on-Don
-                LCD admiral</span>
-            </h3>
+          <div class="container__project__features">
+            <div class="project__features">
+              <h3 class="project__subtitle__features">
+                City:<br><span class="span__project">Rostov-on-Don
+                  LCD admiral</span>
+              </h3>
+            </div>
+            <div class="project__features">
+              <h3 class="project__subtitle__features">
+                apartment area:<br><span class="span__project">81 m2</span>
+              </h3>
+            </div>
+            <div class="project__features">
+              <h3 class="project__subtitle__features">
+                Repair time:<br><span class="span__project">3.5 months</span>
+              </h3>
+            </div>
+            <div class="project__features">
+              <h3 class="project__subtitle__features">
+                Repair Cost:<br><span class="span__project">Upon request</span>
+              </h3>
+            </div>
           </div>
-          <div class="project__features">
-            <h3 class="project__subtitle__features">
-              apartment area:<br><span class="span__project">81 m2</span>
-            </h3>
-          </div>
-          <div class="project__features">
-            <h3 class="project__subtitle__features">
-              Repair time:<br><span class="span__project">3.5 months</span>
-            </h3>
-          </div>
-          <div class="project__features">
-            <h3 class="project__subtitle__features">
-              Repair Cost:<br><span class="span__project">Upon request</span>
-            </h3>
-          </div>
-          <div class="icons"><img src="static/icons/arrow/arrow-left.svg" class="projects__arrow-left"><img src="static/icons/ovals.svg" class="projects__ovals"><img src="static/icons/arrow/arrow-right.svg" class="projects__arrow-right"></div>
+          
+          <div class="icons__project"><img src="static/icons/arrow/arrow-left.svg" class="projects__arrow-left"><img src="static/icons/ovals.svg" class="projects__ovals"><img src="static/icons/arrow/arrow-right.svg" class="projects__arrow-right"></div>
         </div>
         <div class="projects__img"><img src="static/images/image 2.1.png"></div>
       </div>
-      <div class="container__projects__nav">
-        <ul class="nav__ul">
-        <li><a class="projects__nav__link">Rostov-on-Don, Admiral</a></li>
-        <li><a class="projects__nav__link">Sochi Thieves</a></li>
-        <li><a class="projects__nav__link">Rostov-on-Don Patriotic</a></li>
-        </ul>
+    </div>
+  </section>
+  <section class="control">
+    <div class="container container__control">
+      <h3 class="subtitle__main control__subtitle">
+        online control
+      </h3>
+      <div class="icons__control">
+        <img src="static/icons/control.svg" class="control__video">
       </div>
-     
-     
+      <iframe width="817" height="434" src="https://www.youtube.com/embed/LRZRMgVFrD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video__control"></iframe>
+      <hr class="hr">
+      <p class="control__paragraph">
+        At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
+        Leave a request below and you will receive a link to the broadcast.
+      </p>
+        <form action="">   
+          <div class="form__input form__input-1">
+          <label for="name" class="label__control">Name</label>
+          <input type="text" id="name"  class="input__control" placeholder="What is your name:">
+        </div>
+        <div class="form__input form__input-2">
+          <label for="phone" class="label__control">Phone</label>
+          <input type="text" id="phone" class="input__control" placeholder="Your phone number:">
+        </div>
+         <button type="submit" class="button-submit__control">submit</button>
+    
+       
+       <div class="first-checkbox">
+        <label class="label">
+          <input type="checkbox" class="checkbox" >
+          <span class="fake"></span>
+          <span class="text">I agree to the processing of personal data.</span>
+        </label>
+  </form>
+    </div>
+  </section>
+
+  <section class="repair">
+    <div class="container container__repair">
+      <h1 class="subtitle__main repair__subtitle">
+        TYPES OF REPAIR
+      </h1>
+      <div class="icons__repair">
+        <img src="static/icons/repair.svg" alt="">
+      </div>
+      
+      <div class="wrapper__card">
+        <div class="card-1__repair">
+          <img src="static/images/repair-1.jpg" alt="" width="392px" height ="421px">
+          <div class="info">
+            <h2 class="subtitle__card">Redecorating</h2>
+              <ul class="ul__repair">
+              <li>Dismantling of old coatings</li>
+              <li>Wallpapering</li>
+              <li>Painting walls and ceilings</li>
+              <li>Laying flooring</li>
+              <li>Replacing plumbing</li>
+              <li>Replacing sockets and switches</li>
+              <li>Replacing doors</li>
+          </div>
+            <div class="price__repair project__subtitle__features">
+              from 900 rub / m2
+            </div>
+        </div>
+        <div class="card-2__repair">
+          <img src="static/images/repair-2.jpg" alt="" width="392px" height ="421px">
+          <div class="info">
+            <h2 class="subtitle__card">Overhaul</h2>
+              <ul class="ul__repair">
+                <li>Dismantling of old coatings</li>
+                <li>Wallpapering</li>
+                <li>Painting walls and ceilings</li>
+                <li>Laying flooring</li>
+                <li>Replacing plumbing</li>
+                <li>Replacing sockets and switches</li>
+                <li>Replacing doors</li>
+          </div>
+          <div class="price__repair project__subtitle__features">
+            from 1800 rub / m2
+          </div>
+        </div>
+        <div class="card-3__repair">
+          <img src="static/images/repair-3.jpg" alt="" width="392px" height ="421px">
+          <div class="info">
+            <h2 class="subtitle__card">Designer Repair</h2>
+              <ul class="ul__repair">
+                <li>Dismantling of old coatings</li>
+                <li>Wallpapering</li>
+                <li>Painting walls and ceilings</li>
+                <li>Laying flooring</li>
+                <li>Replacing plumbing</li>
+                <li>Replacing sockets and switches</li>
+                <li>Replacing doors</li>  </h2>
+          </div>
+          <div class="price__repair project__subtitle__features">
+            from 4000 rub / m2
+          </div>
+        </div>
+
+      </div>
+      <div class="offer__repair">
+        <div class="offers">
+          <div class="offer">
+            <div class="number__wrapper">
+              <div class="repair__number">
+               01
+              </div>
+            </div>
+            <p class="repair__paragraph">Our specialist will arrive for measurements per day<br>
+              contact, or appoint a date convenient for you</p>
+          </div>
+          <div class="offer">
+            <div class="number__wrapper">
+              <div class="repair__number">
+               02
+              </div>
+            </div>
+            <p class="repair__paragraph">Free metering</p>
+          </div>
+          <div class="offer">
+            <div class="number__wrapper">
+              <div class="repair__number">
+               03
+              </div>
+            </div>
+            <p class="repair__paragraph">Free consultation</p>
+          </div>
+          <div class="offer">
+            <div class="number__wrapper">
+              <div class="repair__number">
+               04
+              </div>
+            </div>
+            <p class="repair__paragraph">Get a cost estimate and<br>
+              the timing of your future repairs</p>
+          </div>
+        </div>
+        <form action="">
+
+        </form>
+      </div>
+
+
+
     </div>
   </section>
 </main>
