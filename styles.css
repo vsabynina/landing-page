@@ -736,11 +736,6 @@ div.info > h2 {
   line-height: 25px;
   margin-top: -27px;
 }
-@media (max-width: 1440px) {
-  .wrapper__cards > div:not(:last-child) {
-    margin: 0 30px 59px 0;
-  }
-}
 @media (max-width: 1300px) {
   .repair__subtitle {
     font-size: 22px;
